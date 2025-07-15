@@ -2,9 +2,6 @@ pipeline {
     parameters {
         booleanParam(name: 'autoApprove', defaultValue: false, description: 'Automatically run apply after generating Plan?')
     }
-    environment {
-        
-    }
     agent any
     stages {
         stage('Checkout') {
